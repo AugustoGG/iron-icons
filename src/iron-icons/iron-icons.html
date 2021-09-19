@@ -1,0 +1,86 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+
+
+
+
+
+
+<dom-module id="iron-icons">
+  <template>
+    <style>
+      :host {
+        font-family: sans-serif;
+      }
+    </style>
+  
+
+    <h3>iron-icon polymer</h3>
+    <iron-icon icon="polymer"></iron-icon>
+    <h3>iron-icon search</h3>
+    <iron-icon icon="search"></iron-icon>
+    <h3>iron-icon star</h3>
+    <iron-icon icon="star"></iron-icon>
+    <h3>iron-icon settings-power</h3>
+    <iron-icon icon="settings-power"></iron-icon>
+    <h3>iron-icon android</h3>
+    <iron-icon icon="android"></iron-icon>
+    <h3>iron-icon backup</h3>
+    <iron-icon icon="backup"></iron-icon>
+    <h3>iron-icon cancel</h3>
+    <iron-icon icon="cancel"></iron-icon>
+    <h3>iron-icon backup</h3>
+    <iron-icon icon="backup"></iron-icon>
+    <h3>iron-icon chrome-reader-mode</h3>
+    <iron-icon icon="chrome-reader-mode"></iron-icon>
+    <h3>iron-icon code</h3>
+    <iron-icon icon="code"></iron-icon>
+    <h3>iron-icon dashboard</h3>
+    <iron-icon icon="dashboard"></iron-icon>
+    <h3>iron-icon event</h3>
+    <iron-icon icon="event"></iron-icon>
+    <h3>iron-icon face</h3>
+    <iron-icon icon="face"></iron-icon>
+    <h3>iron-icon list</h3>
+    <iron-icon icon="list"></iron-icon>
+    <h3>iron-icon payment</h3>
+    <iron-icon icon="payment"></iron-icon>
+    <h3>iron-icon pets</h3>
+    <iron-icon icon="pets"></iron-icon>
+    <h3>iron-icon report</h3>
+    <iron-icon icon="report"></iron-icon>
+    <h3>iron-icon undo</h3>
+    <iron-icon icon="undo"></iron-icon>
+    <h3>iron-icon work</h3>
+    <iron-icon icon="work"></iron-icon>
+    <h3>iron-icon update</h3>
+    <iron-icon icon="update"></iron-icon>
+    <h3>iron-icon zoom-in</h3>
+    <iron-icon icon="zoom-in"></iron-icon>
+
+
+    <iron-icon icon="[[toggleIcon]]" on-click="toggle"></iron-icon>
+    </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class IronIcons extends Polymer.Element {
+      static get is() { return 'iron-icons'; }
+      _message(fav) {
+        if (fav) {
+          return 'You really like me!';
+        } 
+        else {
+          return 'Do you like me?';
+        }
+      }
+    }
+
+    window.customElements.define(IronIcons.is, IronIcons);
+  </script>
+</dom-module>

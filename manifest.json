@@ -1,0 +1,7 @@
+{
+  "name": "iron-icons",
+  "short_name": "iron-icons",
+  "description": "Ejemplo, listado iron icons",
+  "start_url": "/",
+  "display": "standalone"
+}
